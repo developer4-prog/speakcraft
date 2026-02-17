@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8" />
+    <title>Dictionary | Worksheet English</title>
+    <link rel="stylesheet" href="css/dictionary.css" />
+  </head>
+
+  <body>
+    <div class="worksheet-container">
+      <!-- COLUMNA IZQUIERDA: DICCIONARIO -->
+
+      <section class="dictionary-container">
+        <a href="dos.html" class="home-btn">⬅ Back</a>
+
+        <h2 class="dictionary-title">VOCABULARY – UNIT #2</h2>
+
+        <div class="vocab-grid">
+          <div class="vocab-item" onclick="showTranslation(this)">
+            <span class="word">Wake up</span>
+            <button
+              class="audio-btn"
+              onclick="playAudio(event, 'diccionario/wake-up.mp3')"
+            >
+              🔊
+            </button>
+            <span class="translation">Despertarse</span>
+          </div>
+
+          <div class="vocab-item" onclick="showTranslation(this)">
+            <span class="word">Have breakfast</span>
+            <button
+              class="audio-btn"
+              onclick="playAudio(event, 'diccionario/goodafternoon.mp3')"
+            >
+              🔊
+            </button>
+            <span class="translation">Desayunar</span>
+          </div>
+
+          <div class="vocab-item" onclick="showTranslation(this)">
+            <span class="word">Go to school</span>
+            <button
+              class="audio-btn"
+              onclick="playAudio(event, 'diccionario/go-to-school.mp3')"
+            >
+              🔊
+            </button>
+            <span class="translation">Ir a la escuela</span>
+          </div>
+
+          <div class="vocab-item" onclick="showTranslation(this)">
+            <span class="word">Do homework</span>
+            <button
+              class="audio-btn"
+              onclick="playAudio(event, 'audio/hello.mp3')"
+            >
+              🔊
+            </button>
+            <span class="translation">Hacer la tarea</span>
+          </div>
+
+          <div class="vocab-item" onclick="showTranslation(this)">
+            <span class="word">Play</span>
+            <button
+              class="audio-btn"
+              onclick="playAudio(event, 'audio/hi.mp3')"
+            >
+              🔊
+            </button>
+            <span class="translation">Jugar</span>
+          </div>
+
+          <div class="vocab-item" onclick="showTranslation(this)">
+            <span class="word">Watch TV</span>
+            <button
+              class="audio-btn"
+              onclick="playAudio(event, 'audio/how-are-you.mp3')"
+            >
+              🔊
+            </button>
+            <span class="translation">Ver la televisión</span>
+          </div>
+
+          <div class="vocab-item" onclick="showTranslation(this)">
+            <span class="word">Go to bed</span>
+            <button
+              class="audio-btn"
+              onclick="playAudio(event, 'audio/whats-up.mp3')"
+            >
+              🔊
+            </button>
+            <span class="translation">Ir a dormir</span>
+          </div>
+
+          <div class="vocab-item" onclick="showTranslation(this)">
+            <span class="word">Morning</span>
+            <button
+              class="audio-btn"
+              onclick="playAudio(event, 'audio/nice-to-meet-you.mp3')"
+            >
+              🔊
+            </button>
+            <span class="translation">Mañana</span>
+          </div>
+
+          <div class="vocab-item" onclick="showTranslation(this)">
+            <span class="word">Afternoon</span>
+            <button
+              class="audio-btn"
+              onclick="playAudio(event, 'audio/see-you-later.mp3')"
+            >
+              🔊
+            </button>
+            <span class="translation">Tarde</span>
+          </div>
+
+          <div class="vocab-item" onclick="showTranslation(this)">
+            <span class="word">Evening</span>
+            <button
+              class="audio-btn"
+              onclick="playAudio(event, 'audio/see-you-soon.mp3')"
+            >
+              🔊
+            </button>
+            <span class="translation">Noche</span>
+          </div>
+      </section>
+
+      <!-- COLUMNA DERECHA: DIÁLOGO -->
+      <section class="dialogue-container">
+        <h2>Dialogue Practice</h2>
+
+        <textarea
+          id="dialogueText"
+          placeholder="Write your dialogue here using the vocabulary..."
+        ></textarea>
+
+        <div class="dialogue-buttons">
+          <button onclick="startRecording()">🎙 Start recording</button>
+          <button onclick="stopRecording()">⏹ Stop</button>
+          <button onclick="downloadText()">⬇ Download dialogue</button>
+          <button onclick="downloadAudio()">⬇ Download audio</button>
+        </div>
+
+        <audio id="audioPlayback" controls></audio>
+      </section>
+    </div>
+
+    <script src="dictionary.js"></script>
+  </body>
+</html>
