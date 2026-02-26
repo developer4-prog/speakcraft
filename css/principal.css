@@ -338,7 +338,7 @@
 }
 
 /* =========================
-   RESPONSIVE REAL
+   RESPONSIVE MEJORADO
    ========================= */
 
 @media (max-width: 768px) {
@@ -346,22 +346,50 @@
     flex-direction: column;
   }
 
+  /* Sidebar más compacto */
   .sidebar-lessons {
     width: 100%;
+    padding: 15px;
   }
 
+  .sidebar-section li {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  /* Contenido más proporcionado */
   .content-lessons {
     width: 100%;
-    padding: 20px;
+    padding: 18px;
   }
 
+  /* Header de lección */
   .lesson-header-card {
     flex-direction: column;
     text-align: center;
+    gap: 15px;
+  }
+
+  .lesson-header-card h2 {
+    font-size: 1.3rem;
   }
 
   .banner-img {
     width: 100%;
-    margin-top: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Burbujas más adaptadas */
+  .bubble {
+    max-width: 95%;
+    font-size: 0.9rem;
+  }
+
+  /* Botones mejor tamaño */
+  .btn-primary-action,
+  .start-button {
+    width: 100%;
+    text-align: center;
   }
 }
