@@ -273,3 +273,66 @@
 .start-button:hover {
   background-color: #1a68d1;
 }
+
+@media (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .lesson-header-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-img {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+.home-link {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+  }
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .hero-card {
+    flex-direction: column;
+  }
+
+  .hero-card img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -68,3 +68,40 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+  }
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .hero-card {
+    flex-direction: column;
+  }
+
+  .hero-card img {
+    width: 100%;
+    height: auto;
+  }
+}
