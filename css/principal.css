@@ -336,3 +336,32 @@
     height: auto;
   }
 }
+
+/* =========================
+   RESPONSIVE REAL
+   ========================= */
+
+@media (max-width: 768px) {
+  .layout-principal {
+    flex-direction: column;
+  }
+
+  .sidebar-lessons {
+    width: 100%;
+  }
+
+  .content-lessons {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .lesson-header-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-img {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
