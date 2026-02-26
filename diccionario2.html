@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta charset="UTF-8" />
-    <title>Dictionary | Worksheet English</title>
+    <title>Vocabulary | Worksheet English</title>
     <link rel="stylesheet" href="css/dictionary.css" />
   </head>
 
@@ -22,7 +22,7 @@
             <span class="word">Wake up</span>
             <button
               class="audio-btn"
-              onclick="playAudio(event, 'diccionario/wake-up.mp3')"
+              onclick="playAudio(event, 'diccionario/wakeup.mp3')"
             >
               🔊
             </button>
@@ -33,7 +33,7 @@
             <span class="word">Have breakfast</span>
             <button
               class="audio-btn"
-              onclick="playAudio(event, 'diccionario/goodafternoon.mp3')"
+              onclick="playAudio(event, 'diccionario/havebreakfast.mp3')"
             >
               🔊
             </button>
@@ -44,7 +44,7 @@
             <span class="word">Go to school</span>
             <button
               class="audio-btn"
-              onclick="playAudio(event, 'diccionario/go-to-school.mp3')"
+              onclick="playAudio(event, 'diccionario/gotoschool.mp3')"
             >
               🔊
             </button>
@@ -55,7 +55,7 @@
             <span class="word">Do homework</span>
             <button
               class="audio-btn"
-              onclick="playAudio(event, 'audio/hello.mp3')"
+              onclick="playAudio(event, 'diccionario/dohomework.mp3')"
             >
               🔊
             </button>
@@ -66,7 +66,7 @@
             <span class="word">Play</span>
             <button
               class="audio-btn"
-              onclick="playAudio(event, 'audio/hi.mp3')"
+              onclick="playAudio(event, 'diccionario/Play.mp3')"
             >
               🔊
             </button>
@@ -77,7 +77,7 @@
             <span class="word">Watch TV</span>
             <button
               class="audio-btn"
-              onclick="playAudio(event, 'audio/how-are-you.mp3')"
+              onclick="playAudio(event, 'diccionario/watchtv.mp3')"
             >
               🔊
             </button>
@@ -88,7 +88,7 @@
             <span class="word">Go to bed</span>
             <button
               class="audio-btn"
-              onclick="playAudio(event, 'audio/whats-up.mp3')"
+              onclick="playAudio(event, 'diccionario/gotobed.mp3')"
             >
               🔊
             </button>
@@ -99,7 +99,7 @@
             <span class="word">Morning</span>
             <button
               class="audio-btn"
-              onclick="playAudio(event, 'audio/nice-to-meet-you.mp3')"
+              onclick="playAudio(event, 'diccionario/morning.mp3')"
             >
               🔊
             </button>
@@ -110,7 +110,7 @@
             <span class="word">Afternoon</span>
             <button
               class="audio-btn"
-              onclick="playAudio(event, 'audio/see-you-later.mp3')"
+              onclick="playAudio(event, 'diccionario/afternoon.mp3')"
             >
               🔊
             </button>
@@ -121,7 +121,7 @@
             <span class="word">Evening</span>
             <button
               class="audio-btn"
-              onclick="playAudio(event, 'audio/see-you-soon.mp3')"
+              onclick="playAudio(event, 'diccionario/evening.mp3')"
             >
               🔊
             </button>
@@ -131,21 +131,27 @@
 
       <!-- COLUMNA DERECHA: DIÁLOGO -->
       <section class="dialogue-container">
-        <h2>Dialogue Practice</h2>
+        <h2>Speak on your own</h2>
+        <h>
+          In this section, you can create your own dialogue.Use the vocabulary
+          box to help you write your dialogue. Listen to the pronunciation and
+          then record your dialogue.
+        </h>
 
-        <textarea
-          id="dialogueText"
-          placeholder="Write your dialogue here using the vocabulary..."
-        ></textarea>
+        <textarea id="dialogueText" placeholder=""></textarea>
 
         <div class="dialogue-buttons">
           <button onclick="startRecording()">🎙 Start recording</button>
           <button onclick="stopRecording()">⏹ Stop</button>
           <button onclick="downloadText()">⬇ Download dialogue</button>
           <button onclick="downloadAudio()">⬇ Download audio</button>
+          <button id="gradeBtn" onclick="togglePronunciation()">
+            ⭐ Start pronunciation check
+          </button>
         </div>
 
         <audio id="audioPlayback" controls></audio>
+        <p id="scoreResult"></p>
       </section>
     </div>
 

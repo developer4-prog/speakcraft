@@ -141,6 +141,14 @@ function gradePronunciation() {
     let level = "";
     let emoji = "";
 
+    let missedWords = [];
+
+    writtenWords.forEach((word) => {
+      if (!spokenWords.includes(word)) {
+        missedWords.push(word);
+      }
+    });
+
     if (score >= 85) {
       level = "Excellent";
       emoji = "🟢";
@@ -152,7 +160,10 @@ function gradePronunciation() {
       emoji = "🔴";
     }
 
-    scoreResult.textContent = `${emoji} Pronunciation score: ${score}% — ${level}`;
+    scoreResult.innerHTML = `
+${emoji} Pronunciation score: ${score}% — ${level}
+<br>❌ Missing words: ${missedWords.length ? missedWords.join(", ") : "None 🎉"}
+`;
   };
 
   recognition.onerror = (event) => {
@@ -223,8 +234,16 @@ function evaluatePronunciation() {
     return;
   }
 
-  const writtenWords = text.split(" ");
-  const spokenWords = spokenText.split(" ");
+  function normalize(text) {
+    return text
+      .toLowerCase()
+      .replace(/[^\w\s]/g, "")
+      .split(/\s+/)
+      .filter((word) => word.length > 0);
+  }
+
+  const writtenWords = normalize(text);
+  const spokenWords = normalize(spokenText);
 
   let matches = 0;
   writtenWords.forEach((word) => {
