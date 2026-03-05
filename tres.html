@@ -5,7 +5,6 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unit #3 - Greetings | Worksheet English</title>
     <link rel="stylesheet" href="css/principal.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
@@ -13,26 +12,29 @@
     />
   </head>
 
+<script src="script.js"></script>
+<script src="grabacion.js"></script>
+
   <body class="menu-principal-body">
     <nav class="navbar">
       <div class="nav-container">
-        <div class="nav-logo">WORKSHEET <span>ENGLISH</span>.COM</div>
+        <div class="nav-logo">SPEAK <span>CRAFT</span>.COM</div>
       </div>
     </nav>
 
     <div class="layout-principal">
       <aside class="sidebar-lessons">
         <div class="sidebar-section">
-          <h4>UNIT #3: GREETINGS</h4>
+          <h4>UNIT #3</h4>
           <ul>
   <li class="active">
-    <a href="">👨‍👧 ROLE PLAY</a>
+    <a href="">👨‍👧 ACTIVITY #1</a>
+  </li>
+    <li>
+    <a href="activitytres.html">📘 ACTIVITY #2</a>
   </li>
   <li>
-    <a href="diccionario2.html">📘 DICTIONARY</a>
-  </li>
-  <li>
-    <a href="listening.html">🎧 ESCUCHAR</a>
+    <a href="diccionario3.html">📘 CREATE YOUR DIALOGUE</a>
   </li>
 </ul>
 
@@ -44,6 +46,11 @@
           </ul>
         </div>
 
+            <div class="sidebar-gif">
+            <img src="niñoestudiando.gif" alt="Learning animation" />
+          </div>
+        </div>
+
       </aside>
 
       <main class="content-lessons">
@@ -52,12 +59,11 @@
             <span class="badge"></span>
             <h2>Role Play Activities</h2>
             <p>
-              Topic: Daily routines | Scenario: Telling a partner what you do in
-              a day
+              Topic: Part of the human body | Scenario: Visiting the doctor.
             </p>
           </div>
           <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=300"
+            src="https://www.shutterstock.com/image-vector/friendly-female-doctor-consulting-young-600nw-2664817107.jpg"
             class="banner-img"
           />
         </header>
@@ -68,74 +74,86 @@
             <audio
               id="globalAudio"
               controls
-              src="audio/full_conversation.mp3"
+              src="conversations/partofthehumanbody.mp3"
             ></audio>
-          </div>
-          <div class="role-selector">
-            <button class="btn-role" onclick="playRole('A')">
-              🎙️ Practice Person A
-            </button>
-            <button class="btn-role" onclick="playRole('B')">
-              🎙️ Practice Person B
-            </button>
           </div>
         </div>
 
         <div class="lesson-body">
-          <h3>Interactive Dialogue</h3>
+          <h3>Dialogue</h3>
 
-          <div class="chat-container">
+          <div class="chat-container" id="practiceDialogue"> 
             <div class="bubble bubble-a">
-              <strong>A:</strong> Hi, can you tell me what do you do in the
-              morning?
+              <strong>A:</strong> Good morning. How are you today?
             </div>
             <div class="bubble bubble-b">
-              <strong>B:</strong> Hello, I wake up early and go to school. What
-              about you?
+              <strong>B:</strong> Good morning. I don’t feel very well.
             </div>
             <div class="bubble bubble-a">
-              <strong>A:</strong> I wake up at six and have breakfast.
+              <strong>A:</strong> What’s the problem?
             </div>
             <div class="bubble bubble-b">
-              <strong>B:</strong> Do you go to school by bus?
+              <strong>B:</strong>  I have a headache and my throat hurts.
             </div>
             <div class="bubble bubble-a">
-              <strong>A:</strong> Yes, I go by bus.
+              <strong>A:</strong> Do you have a fever?
             </div>
             <div class="bubble bubble-b">
-              <strong>B:</strong> And, what do you do in the afternoon?
+              <strong>B:</strong> Yes, a little.
             </div>
             <div class="bubble bubble-a">
-              <strong>A:</strong> I do my homework and play with my friends.
+              <strong>A:</strong> Do you have pain in your chest?
             </div>
             <div class="bubble bubble-b">
-              <strong>B:</strong> That sounds nice.
+              <strong>B:</strong> No, my chest feels fine.
             </div>
             <div class="bubble bubble-a">
-              <strong>A:</strong> Yes, it is, and in the evening, I watch TV.
+              <strong>A:</strong> Does your stomach hurt?
             </div>
             <div class="bubble bubble-b">
-              <strong>B:</strong> Me too, but I have to go to bed early.
+              <strong>B:</strong> Yes, a little, and my back hurts too.
             </div>
             <div class="bubble bubble-a">
-              <strong>A:</strong> I see. Well, I have to leave now. Tomorrow I
-              will continue telling you about my daily routine.
+              <strong>A:</strong> Okay, it doesn’t seem to be anything serious. 
+              You should rest and drink plenty of water. You will be fine soon.
             </div>
             <div class="bubble bubble-b">
-              <strong>B:</strong> Ok. See you tomorrow, take care.
+              <strong>B:</strong> Doctor, what happens if I don’t feel better?
+            </div>
+            <div class="bubble bubble-a">
+              <strong>A:</strong> If you don’t improve or if your fever gets worse, you should come back.
+            </div>
+            <div class="bubble bubble-b">
+              <strong>B:</strong> Okay, thank you, doctor.
+            </div>
+            <div class="bubble bubble-a">
+              <strong>A:</strong> You’re welcome. Take care.
+            </div>
+             <div class="bubble bubble-b">
+              <strong>B:</strong> Goodbye.
             </div>
           </div>
 
-          <div class="action-area">
-            <p>Ready to record your voice?</p>
-            <a href="recording.html" class="btn-primary-action">
-              Go to Recording Activity 🎙️
-            </a>
-          </div>
-        </div>
-      </main>
-    </div>
+<div class="action-area">
+  <p class="record-title">Ready to record your voice?</p>
+  <div class="controls">
+    <button id="startBtn" class="btn btn-record">🎤 Record</button>
+    <button id="stopBtn" class="btn btn-stop" disabled>
+      ⏸ Stop
+    </button>
+    <button id="downloadBtn" class="btn btn-download" style="display:none;">
+   ⬇ Download Recording
+   </button>
 
-    <script src="reproducciones.js"></script>
+    <audio id="audioPlayback" controls></audio>
+    <button id="gradeBtn" onclick="togglePronunciation()" class="btn btn-grade">
+      ⭐ Start pronunciation check
+    </button>
+    <p id="scoreResult" class="score-text"></p>
+  </div>
+</div>
+<script src="pronunciacion.js"></script>
+<script src="grabacion.js"></script>
   </body>
 </html>
+
