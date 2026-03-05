@@ -206,3 +206,13 @@ audio {
     height: auto;
   }
 }
+
+#gradeBtn {
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+#scoreResult {
+  margin-top: 15px;
+  font-size: 18px;
+}

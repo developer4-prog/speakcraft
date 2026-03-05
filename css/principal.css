@@ -415,3 +415,198 @@
     font-size: 0.8rem;
   }
 }
+
+.sidebar-section li.active {
+  background: #1f2933;
+  border-left: 4px solid #00d4ff;
+}
+
+.sidebar-gif {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.sidebar-gif img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 12px;
+  opacity: 0.9;
+}
+.sidebar-gif img {
+  filter: brightness(0.9);
+  transition: transform 0.3s ease;
+}
+
+.sidebar-gif img:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.main-footer {
+  background: #1f2933;
+  color: #d1d5db;
+  padding: 30px 30px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #374151;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* =========================
+   BUTTON DESIGN PRO
+   ========================= */
+
+.controls {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Colores */
+
+.btn-record {
+  background: linear-gradient(135deg, #ff4b4b, #c60000);
+}
+
+.btn-pause {
+  background: linear-gradient(135deg, #ffb703, #fb8500);
+}
+
+.btn-download {
+  background: linear-gradient(135deg, #2ec4b6, #118ab2);
+}
+
+.btn-grade {
+  background: linear-gradient(135deg, #4361ee, #3a0ca3);
+}
+
+/* ================================
+   ACTION AREA LAYOUT
+================================ */
+
+.action-area {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ================================
+   BASE BUTTON STYLE
+================================ */
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  min-width: 220px;
+}
+
+/* RECORD BUTTON */
+.btn-record {
+  background: linear-gradient(135deg, #ff4d4d, #c0392b);
+  color: white;
+}
+
+.btn-record:hover {
+  transform: scale(1.05);
+}
+
+/* STOP BUTTON */
+.btn-stop {
+  background: linear-gradient(135deg, #7f8c8d, #34495e);
+  color: white;
+}
+
+/* DOWNLOAD BUTTON */
+.btn-download {
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: white;
+}
+
+/* GRADE BUTTON */
+.btn-grade {
+  background: linear-gradient(135deg, #6c5ce7, #3f2b96);
+  color: white;
+}
+
+.btn:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* AUDIO PLAYER */
+audio {
+  margin-top: 10px;
+  width: 250px;
+}
+
+/* SCORE */
+.score-text {
+  font-weight: bold;
+  margin-top: 5px;
+}
