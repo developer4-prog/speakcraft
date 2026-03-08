@@ -8,3 +8,7 @@ function showTranslation(element) {
     element.classList.remove("show");
   }, 3000);
 }
+
+function toggleMenu() {
+  document.querySelector(".sidebar-lessons").classList.toggle("active");
+}
