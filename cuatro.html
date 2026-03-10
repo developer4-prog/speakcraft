@@ -145,13 +145,16 @@
    </button>
 
     <audio id="audioPlayback" controls></audio>
-    <button id="gradeBtn" onclick="togglePronunciation()" class="btn btn-grade">
-      ⭐ Start pronunciation check
-    </button>
-    <p id="scoreResult" class="score-text"></p>
+    <div class="floating-pronunciation">
+  <button id="gradeBtn" onclick="togglePronunciation()" class="btn btn-grade">
+    ⭐ Start pronunciation check
+  </button>
+  <p id="scoreResult" class="score-text"></p>
+</div>
   </div>
 </div>
-<script src="pronunciacion.js"></script>
 <script src="grabacion.js"></script>
+<script src="pronunciacion.js"></script>
+
   </body>
 </html>
