@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="es">
   <head>
@@ -143,3 +144,150 @@
 
   </body>
 </html>
+=======
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/principal.css" />
+  </head>
+
+  <body class="menu-principal-body">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">SPEAK <span>CRAFT</span>.COM</div>
+      </div>
+    </nav>
+
+    <div class="layout-principal">
+      <aside class="sidebar-lessons">
+        <div class="sidebar-section">
+          
+          <h4>UNIT #1</h4>
+<ul>
+  <li class="active">
+    <a href="">👨‍👧 ACTIVITY #1</a>
+  </li>
+   <li>
+    <a href="activityuno.html">📘 ACTIVITY #2</a>
+  </li>
+  <li>
+    <a href="diccionario.html">📘 CREATE YOUR DIALOGUE</a>
+  </li>
+</ul>
+
+
+        <div class="sidebar-section">
+          <h4>EXTRAS</h4>
+          <ul>
+            
+            <a href="principal.html" class="home-link">🏠 HOME</a>
+
+          </ul>
+            <div class="sidebar-gif">
+            <img src="estudiando.gif" alt="Learning animation" />
+          </div>
+        </div>
+
+
+        </div>
+      </aside>
+
+      <main class="content-lessons">
+        <header class="lesson-header-card">
+          <div class="lesson-text">
+            <span class="badge"></span>
+            <h2>Role Play Activities</h2>
+            <p>Topic: Greetings | Scenario: Meeting someone</p>
+          </div>
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/045/880/932/small/cute-boy-listened-to-girl-talk-about-her-story-vector.jpg"
+            class="banner-img"
+          />
+        </header>
+
+        <div class="audio-player-container">
+          <div class="player-header">
+            <span>Listen to the full conversation</span>
+            <audio
+              id="globalAudio"
+              controls
+              src="conversations/greetingsmeetingsomeone.mp3"
+            ></audio>
+          </div>
+          <div class="role-selector">
+          </div>
+        </div>
+
+        <div class="lesson-body">
+          <h3>Dialogue</h3>
+
+          <div class="chat-container" id="practiceDialogue">
+            <div class="bubble bubble-a">
+              <strong>A:</strong> Hi, how are you?
+            </div>
+            <div class="bubble bubble-b">
+              <strong>B:</strong> Hello, I am fine, and you?
+            </div>
+            <div class="bubble bubble-a">
+              <strong>A:</strong> I am fine too, thanks.
+            </div>
+            <div class="bubble bubble-b">
+              <strong>B:</strong> What is your name?
+            </div>
+            <div class="bubble bubble-a">
+              <strong>A:</strong> My name is Adrian. What about you?
+            </div>
+            <div class="bubble bubble-b">
+              <strong>B:</strong> Nice to meet you Adrian. My name is Daniela.
+            </div>
+            <div class="bubble bubble-a">
+              <strong>A:</strong> Nice to meet you too. Do you come to this park
+              often?
+            </div>
+            <div class="bubble bubble-b">
+              <strong>B:</strong> Yes, my house is just across the street.
+            </div>
+            <div class="bubble bubble-a">
+              <strong>A:</strong> That’s great. My house is also near here.
+            </div>
+            <div class="bubble bubble-b">
+              <strong>B:</strong> Well, we can probably play together another
+              day.
+            </div>
+            <div class="bubble bubble-a">
+              <strong>A:</strong> That would be nice. So, see you soon.
+            </div>
+            <div class="bubble bubble-b">
+              <strong>B:</strong> Goodbye, take care.
+            </div>
+          </div>
+
+<div class="action-area">
+  <p class="record-title">Ready to record your voice?</p>
+
+  <div class="controls">
+    <button id="startBtn" class="btn btn-record">🎤 Record</button>
+    <button id="stopBtn" class="btn btn-stop" disabled>⏸ Stop</button>
+    <button id="downloadBtn" class="btn btn-download" style="display:none;">
+      ⬇ Download Recording
+    </button>
+    <audio id="audioPlayback" controls></audio>
+  </div>
+
+  <div class="floating-pronunciation">
+    <button id="gradeBtn" onclick="togglePronunciation()" class="btn btn-grade">
+      ⭐ Start pronunciation check
+    </button>
+    <div id="scoreResult" class="score-text"></div>
+  </div>
+</div>
+
+<script src="grabacion.js"></script>
+<script src="pronunciacion.js"></script>
+      </main>
+    </div>
+  </body>
+>>>>>>> 6f13644 (Primer commit SpeakCraft tesis)

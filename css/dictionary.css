@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ====== GLOBAL ====== */
 body {
   background: #020617;
@@ -216,3 +217,223 @@ audio {
   margin-top: 15px;
   font-size: 18px;
 }
+=======
+/* ====== GLOBAL ====== */
+body {
+  background: #020617;
+  color: #e5e7eb;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  padding: 40px;
+}
+
+/* ====== LAYOUT GENERAL ====== */
+.worksheet-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ====== DICCIONARIO ====== */
+.dictionary-container {
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.dictionary-title {
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* Grid de vocabulario */
+.vocab-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 30px;
+}
+
+/* Item vocabulario */
+.vocab-item {
+  position: relative;
+  border-bottom: 1px dashed #334155;
+  padding-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Palabra (clickeable) */
+.word {
+  font-weight: 500;
+  cursor: pointer; /* 👈 indica click */
+}
+
+/* Botón de audio */
+.audio-btn {
+  background: none;
+  border: none;
+  color: #38bdf8;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+}
+
+.audio-btn:hover {
+  color: #0ea5e9;
+}
+
+/* Traducción (solo por click) */
+.translation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 6px;
+  background: #111827;
+  color: #e5e7eb;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Visible al hacer click */
+.vocab-item.show .translation {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====== DIÁLOGO ====== */
+.dialogue-container {
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.dialogue-container h2 {
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  height: 180px;
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 12px;
+  resize: none;
+}
+
+.dialogue-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  background: #1e293b;
+  color: #e5e7eb;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #334155;
+}
+
+audio {
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+  .worksheet-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .vocab-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-btn {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.home-btn:hover {
+  text-decoration: underline;
+}
+
+#scoreResult {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #38bdf8;
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+  }
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .hero-card {
+    flex-direction: column;
+  }
+
+  .hero-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#gradeBtn {
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+#scoreResult {
+  margin-top: 15px;
+  font-size: 18px;
+}
+>>>>>>> 6f13644 (Primer commit SpeakCraft tesis)
